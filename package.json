@@ -1,21 +1,21 @@
 {
-  "name": "googleads-node-lib",
-  "version": "0.0.34",
-  "description": "googleads-node-lib",
+  "name": "pdf-googleads-node-lib",
+  "version": "0.0.36",
+  "description": "pdf-googleads-node-lib",
   "main": "index.js",
   "scripts": {
     "test": "gulp test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ErikEvenson/googleads-node-lib.git"
+    "url": "git+https://github.com/streamtOtO/googleads-node-lib.git"
   },
   "author": "Erik E. Evenson <erik.e.evenson@gmail.com> (http://erikevenson.net)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ErikEvenson/googleads-node-lib/issues"
+    "url": "https://github.com/streamtOtO/googleads-node-lib.git/issues"
   },
-  "homepage": "https://github.com/ErikEvenson/googleads-node-lib#readme",
+  "homepage": "https://github.com/streamtOtO/googleads-node-lib.git#readme",
   "devDependencies": {
     "chai": "3.4.1",
     "del": "2.0.2",
