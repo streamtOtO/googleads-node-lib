@@ -76,7 +76,7 @@ module.exports = {
   // Utility
   BatchJobService: null,
   GeoLocationService: null,
-  MediaService: null,
+  MediaService: require('./services/mediaService'),
   ConstantDataService: require('./services/constantDataService'),
   LocationCriterionService: null,
 

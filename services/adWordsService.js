@@ -159,6 +159,26 @@ function AdWordsService(options) {
     self.mutate(options, done);
   };
 
+  self.mutateAddMultiple = function(clientCustomerId, operands, done) {
+    //if (!operands.isValid()) return done(operand.validationError);
+    var operations = [];
+    async.each(operands, function(operand, cb) {
+      operations.push({
+        operator: 'ADD',
+        operand: operand.toJSON()
+      });
+      cb();
+    },
+    function(err) {
+      var options = {
+        clientCustomerId: clientCustomerId,
+        mutateMethod: 'mutate',
+        operations: operations
+      };
+      self.mutate(options, done);
+    });
+  };
+
   self.mutateRemove = function(clientCustomerId, operand, done) {
     var operation = {};
     operation[self.operatorKey] = 'REMOVE';
