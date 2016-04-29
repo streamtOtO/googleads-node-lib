@@ -36,7 +36,7 @@ function AdWordsObject(options) {
   self.credentials = null;
   self.tokenUrl = 'https://www.googleapis.com/oauth2/v3/token';
   self.verbose = self.options.verbose;
-  self.version = 'v201509';
+  self.version = 'v201603';
 
   self.refresh = function(done) {
     // check if current credentials haven't expired
