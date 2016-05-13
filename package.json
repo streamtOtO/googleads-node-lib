@@ -1,6 +1,6 @@
 {
   "name": "pdf-googleads-node-lib",
-  "version": "0.0.37",
+  "version": "0.0.38",
   "description": "pdf-googleads-node-lib",
   "main": "index.js",
   "scripts": {

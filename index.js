@@ -49,7 +49,7 @@ module.exports = {
   AdGroupCriterionService: require('./services/adGroupCriterionService'),
   AdGroupFeedService: null,
   AdGroupService: require('./services/adGroupService'),
-  AdwordsUserListService: null,
+  AdwordsUserListService: require('./services/adWordsListService'),
   BudgetService: require('./services/budgetService'),
   CampaignCriterionService: require('./services/campaignCriterionService'),
   CampaignExtensionSettingService: null,
