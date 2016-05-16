@@ -159,6 +159,26 @@ function AdWordsService(options) {
     self.mutate(options, done);
   };
 
+
+  self.mutateAddCmNs = function(clientCustomerId, operand, done) {
+    if (!operand.isValid()) return done(operand.validationError);
+    var operation = {};
+    var xmlns = 'https://adwords.google.com/api/adwords/cm/' + self.version;
+    operation[self.operatorKey] = {
+      attributes: {'xmlns':xmlns},
+      $xml: 'ADD'
+    };
+    operation.operand = operand.toJSON();
+
+    var options = {
+      clientCustomerId: clientCustomerId,
+      mutateMethod: 'mutate',
+      operations: [operation]
+    };
+
+    self.mutate(options, done);
+  };
+
   self.mutateAddMultiple = function(clientCustomerId, operands, done) {
     //if (!operands.isValid()) return done(operand.validationError);
     var operations = [];

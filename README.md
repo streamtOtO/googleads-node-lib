@@ -254,6 +254,15 @@ service.mutateLinkSet(
 ```
 
 ## Changelog
+### 0.0.39
+- adds convesionTrackerService, add mutateAddCmNs - for userList operator namespaces with cm, not rm.
+
+### 0.0.38
+- adds userListService.
+
+### 0.0.37
+- adds mutateAddMultiple for multiple operands in operations field.
+
 ### 0.0.33
 - adds test options.
 

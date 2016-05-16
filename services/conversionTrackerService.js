@@ -4,7 +4,7 @@ var
   soap = require('soap');
 
 var AdWordsService = require('./adWordsService');
-var types = require('../types/userList');
+var types = require('../types/conversionTracker');
 
 function Service(options) {
   var self = this;
@@ -51,37 +51,34 @@ function Service(options) {
   };
 
   self.selectable = [
-    'AccessReason',
-    'AccountUserListStatus',
-    'ConversionTypes',
-    'DateSpecificListEndDate',
-    'DateSpecificListRule',
-    'DateSpecificListStartDate',
-    'Description',
-    'ExpressionListRule',
+    'AlwaysUseDefaultRevenueValue',
+    'AppId',
+    'AppPlatform',
+    'AppPostbackUrl',
+    'BackgroundColor',
+    'Category',
+    'ConversionPageLanguage',
+    'ConversionTypeOwnerCustomerId',
+    'CountingType',
+    'CtcLookbackWindow',
+    'DefaultRevenueCurrencyCode',
+    'DefaultRevenueValue',
+    'ExcludeFromBidding',
     'Id',
-    'IntegrationCode',
-    'IsEligibleForDisplay',
-    'IsEligibleForSearch',
-    'IsReadOnly',
-    'ListType',
-    'MembershipLifeSpan',
+    'LastReceivedRequestTime',
+    'MostRecentConversionDate',
     'Name',
-    'Rules',
-    'SeedListSize',
-    'SeedUserListDescription',
-    'SeedUserListId',
-    'SeedUserListName',
-    'SeedUserListStatus',
-    'Size',
-    'SizeForSearch',
-    'SizeRange',
-    'SizeRangeForSearch',
-    'Status'
+    'OriginalConversionTypeId',
+    'PhoneCallDuration',
+    'Status',
+    'TextFormat',
+    'TrackingCodeType',
+    'ViewthroughLookbackWindow',
+    'WebsitePhoneCallDuration',
   ];
 
-  self.xmlns = 'https://adwords.google.com/api/adwords/rm/' + self.version;
-  self.wsdlUrl = self.xmlns + '/AdwordsUserListService?wsdl';
+  self.xmlns = 'https://adwords.google.com/api/adwords/cm/' + self.version;
+  self.wsdlUrl = self.xmlns + '/ConversionTrackerService?wsdl';
 }
 Service.prototype = _.create(AdWordsService.prototype, {
   'constructor': Service
