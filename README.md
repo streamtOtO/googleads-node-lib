@@ -254,6 +254,10 @@ service.mutateLinkSet(
 ```
 
 ## Changelog
+### 0.0.41
+- backup accountPerfomance
+
+
 ### 0.0.40
 - remove deprecated fields in reports/adGroupPerfomanceReport
 
