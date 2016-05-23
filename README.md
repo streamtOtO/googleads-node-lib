@@ -254,6 +254,9 @@ service.mutateLinkSet(
 ```
 
 ## Changelog
+### 0.0.40
+- remove deprecated fields in reports/adGroupPerfomanceReport
+
 ### 0.0.39
 - adds convesionTrackerService, add mutateAddCmNs - for userList operator namespaces with cm, not rm.
 

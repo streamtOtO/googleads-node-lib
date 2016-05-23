@@ -115,7 +115,7 @@ function Report(options) {
     // 'SearchRankLostImpressionShare',
     // 'Slot',
     'TargetCpa',
-    'TotalCost',
+    //'TotalCost',
     'TrackingUrlTemplate',
     'ValuePerAllConversion',
     'ValuePerConversion',
