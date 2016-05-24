@@ -254,6 +254,9 @@ service.mutateLinkSet(
 ```
 
 ## Changelog
+### 0.0.42
+- reports/adWordsReport add ZeroImpressions to HTTP Headers
+
 ### 0.0.41
 - backup accountPerfomance
 
