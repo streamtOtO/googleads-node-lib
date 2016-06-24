@@ -254,6 +254,9 @@ service.mutateLinkSet(
 ```
 
 ## Changelog
+### 0.0.43
+- CampaignService in ./types/campaigns turn off validation logic budget/name, because of update status Campaign errors.
+
 ### 0.0.42
 - reports/adWordsReport add ZeroImpressions to HTTP Headers
 
